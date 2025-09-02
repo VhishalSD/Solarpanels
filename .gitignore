@@ -1,0 +1,19 @@
+# Node, npm of frontend build files (indien van toepassing)
+node_modules/
+dist/
+build/
+
+# IDE instellingen
+.vscode/
+.idea/
+
+# Systeem bestanden
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# CSS/HTML/JS bundel bestanden (indien gegenereerd)
+*.css.map
+*.js.map
