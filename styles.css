@@ -1,0 +1,336 @@
+/* ===================== Algemeen ===================== */
+body {
+    font-family: 'Roboto', sans-serif; /* Lettertype voor de hele site */
+    margin: 0;                         /* Verwijdert standaardmarges van browser */
+    padding: 0;                        /* Verwijdert standaardpadding van browser */
+    background-color: #f4f7f9;         /* Lichte achtergrondkleur van de pagina */
+    color: #333;                        /* Standaard tekstkleur */
+}
+
+h1, h2, h3 {
+    color: #2c3e50;                    /* Donkere kleur voor alle titels */
+    margin: 10px 0;                     /* Verticale marge boven en onder de titels */
+}
+
+p {
+    line-height: 1.5;                   /* Regelhoogte voor betere leesbaarheid */
+}
+
+/* ===================== Header ===================== */
+header {
+    display: flex;                      /* Flexbox om logo en menu naast elkaar te zetten */
+    align-items: center;                /* Verticaal centreren van items in header */
+    justify-content: space-between;     /* Logo links, menu rechts */
+    padding: 10px 30px;                 /* Ruimte binnen de header */
+    background-color: #ffffff;          /* Witte achtergrond voor de header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lichte schaduw onder header */
+}
+
+header img {
+    width: 120px;                       /* Breedte van het logo */
+    height: auto;                       /* Hoogte schaalt proportioneel */
+}
+
+nav ul {
+    display: flex;                      /* Menu-items naast elkaar */
+    gap: 25px;                          /* Ruimte tussen de menu-items */
+    list-style: none;                   /* Verwijdert bulletpoints */
+    margin: 0;                          /* Verwijdert standaardmarge */
+    padding: 0;                         /* Verwijdert standaardpadding */
+}
+
+nav ul li a {
+    text-decoration: none;              /* Verwijdert onderstreping van links */
+    color: #2c3e50;                     /* Tekstkleur van links */
+    font-weight: bold;                  /* Vetgedrukt lettertype */
+    transition: color 0.3s;             /* Zachte overgang bij hover */
+}
+
+nav ul li a:hover {
+    color: #f39c12;                     /* Oranje kleur bij hover */
+}
+
+/* ===================== Hero ===================== */
+.hero {
+    text-align: center;                 /* Tekst centreren */
+    padding: 60px 20px;                 /* Binnenruimte boven en onder */
+    background: linear-gradient(135deg, #f39c12 0%, #f1c40f 100%); /* Gradient achtergrond */
+    color: white;                        /* Tekst wit op gradient */
+}
+
+/* ===================== Over ons ===================== */
+.over-ons {
+    text-align: center;                 /* Centraal uitlijnen */
+    padding: 40px 20px;                 /* Binnenruimte rond sectie */
+    background-color: #ecf0f1;          /* Lichte grijze achtergrond */
+}
+
+/* ===================== Producten ===================== */
+.producten {
+    text-align: center;                 /* Titel en tekst centreren */
+    padding: 40px 20px;                 /* Binnenruimte */
+    background-color: #ffffff;          /* Witte achtergrond */
+}
+
+.producten-container {
+    display: flex;                      /* Flexbox voor productblokken naast elkaar */
+    flex-wrap: wrap;                    /* Als er te weinig ruimte is, nieuwe regel */
+    justify-content: center;            /* Alles in het midden uitlijnen */
+    gap: 20px;                          /* Ruimte tussen productblokken */
+    margin-top: 20px;                   /* Ruimte boven de producten */
+}
+
+.product {
+    flex: 1 1 200px;                    /* Flexibel: groeit/krimpt, min breedte 200px */
+    max-width: 220px;                   /* Niet te groot worden */
+    border: 1px solid #ddd;             /* Lichte rand om blok */
+    border-radius: 10px;                /* Afgeronde hoeken */
+    padding: 10px;                      /* Binnenruimte in blok */
+    text-align: center;                 /* Tekst centreren */
+    background-color: #f9f9f9;          /* Lichte achtergrond voor product */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animatie bij hover */
+}
+
+.product img {
+    width: 100%;                        /* Afbeelding vult hele blok */
+    height: 150px;                       /* Vaste hoogte voor uniformiteit */
+    object-fit: cover;                   /* Snijdt afbeelding bij zonder vervorming */
+    border-radius: 10px;                 /* Afgeronde hoeken van afbeelding */
+}
+
+.product:hover {
+    transform: translateY(-5px);        /* Blok gaat iets omhoog */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Schaduw bij hover */
+}
+
+/* ===================== Team ===================== */
+.team-container {
+    display: flex;                      /* Flexbox voor teamleden */
+    justify-content: center;            /* Centraal uitlijnen */
+    flex-wrap: wrap;                    /* Naar volgende regel als niet genoeg ruimte */
+    gap: 20px;                          /* Ruimte tussen teamleden */
+    padding: 40px 20px;                 /* Binnenruimte */
+    background-color: #ecf0f1;          /* Lichte achtergrondkleur */
+}
+
+.teamlid {
+    flex: 1 1 200px;                    /* Flexibele breedte, min 200px */
+    max-width: 250px;                   /* Max breedte */
+    text-align: center;                 /* Tekst centreren */
+    border: 1px solid #ddd;             /* Lichte rand */
+    padding: 10px;                      /* Binnenruimte */
+    border-radius: 10px;                /* Afgeronde hoeken */
+    background-color: #ffffff;          /* Witte achtergrond voor teamlid */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover animatie */
+}
+
+.teamlid img {
+    width: 100%;                        /* Afbeelding vult blok */
+    height: 200px;                       /* Vaste hoogte voor uniformiteit */
+    object-fit: cover;                   /* Snijdt afbeelding bij indien nodig */
+    border-radius: 10px;                 /* Afgeronde hoeken afbeelding */
+}
+
+.teamlid:hover {
+    transform: translateY(-5px);        /* Iets omhoog bij hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Schaduw bij hover */
+}
+
+/* ===================== Footer ===================== */
+footer {
+    text-align: center;                 /* Tekst centreren */
+    padding: 20px;                      /* Binnenruimte */
+    background-color: #2c3e50;          /* Donkere footerkleur */
+    color: white;                        /* Witte tekst */
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;         /* Logo boven menu op mobiel */
+        align-items: center;            /* Centraal uitlijnen */
+    }
+
+    nav ul {
+        flex-direction: column;         /* Menu-items onder elkaar */
+        gap: 10px;                      /* Minder ruimte tussen items */
+        text-align: center;             /* Tekst centreren */
+    }
+
+    .producten-container, .team-container {
+        flex-direction: column;         /* Producten en teamleden onder elkaar */
+        align-items: center;            /* Centraal uitlijnen */
+    }
+
+    .product, .teamlid {
+        max-width: 90%;                 /* Blokken smaller op mobiel */
+    }
+}/* ===================== Algemeen ===================== */
+body {
+    font-family: 'Roboto', sans-serif; /* Basislettertype */
+    margin: 0; /* Verwijder standaardmarges */
+    padding: 0; /* Verwijder standaardpadding */
+    background-color: #f4f6f8; /* Lichte achtergrondkleur */
+    color: #333; /* Tekstkleur */
+}
+
+/* ===================== Header ===================== */
+header {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Verticale uitlijning logo en menu */
+    justify-content: space-between; /* Logo links, menu rechts */
+    padding: 10px 20px; /* Binnenmarges */
+    background-color: #00796b; /* Donkergroene headerkleur */
+    color: #fff; /* Tekst wit */
+}
+
+header img {
+    width: 120px; /* Logo breedte */
+    height: auto; /* Proportioneel */
+}
+
+nav ul {
+    display: flex; /* Menu-items naast elkaar */
+    gap: 20px; /* Ruimte tussen items */
+    list-style: none; /* Geen bulletpoints */
+    margin: 0; /* Geen marge */
+    padding: 0; /* Geen padding */
+}
+
+nav ul li a {
+    text-decoration: none; /* Verwijder onderstreping */
+    color: #fff; /* Witte links */
+    font-weight: 700; /* Vetgedrukt */
+    transition: color 0.3s; /* Smooth hover-effect */
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Geel bij hover */
+}
+
+/* ===================== Hero ===================== */
+.hero {
+    text-align: center; /* Centraal uitlijnen */
+    padding: 60px 20px; /* Binnenruimte */
+    background: linear-gradient(to right, #4db6ac, #00796b); /* Gradient achtergrond */
+    color: white; /* Witte tekst */
+}
+
+/* ===================== Over ons ===================== */
+.over-ons {
+    padding: 40px 20px; /* Binnenruimte */
+    text-align: center; /* Centraal uitlijnen */
+}
+
+/* ===================== Producten ===================== */
+.producten-container {
+    display: flex; /* Flexbox voor producten */
+    flex-wrap: wrap; /* Nieuwe regel bij te weinig ruimte */
+    justify-content: center; /* Centraal uitlijnen */
+    gap: 20px; /* Ruimte tussen producten */
+    padding: 40px 20px; /* Binnenruimte */
+}
+
+.product {
+    flex: 1 1 220px; /* Flexibele breedte, min 220px */
+    max-width: 250px; /* Max breedte */
+    background-color: #fff; /* Witte achtergrond */
+    border-radius: 10px; /* Afronde hoeken */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Schaduw */
+    overflow: hidden; /* Beeld netjes snijden */
+    text-align: center; /* Tekst centreren */
+    transition: transform 0.3s; /* Hover animatie */
+}
+
+.product img {
+    width: 100%; /* Vul container */
+    height: 180px; /* Vaste hoogte */
+    object-fit: cover; /* Snijdt afbeelding correct */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Verplaats omhoog bij hover */
+}
+
+/* ===================== Team ===================== */
+.team-container {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Nieuwe regel bij kleine schermen */
+    justify-content: center; /* Centraal uitlijnen */
+    gap: 20px; /* Ruimte tussen teamleden */
+    padding: 40px 20px; /* Binnenruimte */
+}
+
+.teamlid {
+    flex: 1 1 220px;               /* Flexibele breedte met minimum 220px */
+    max-width: 250px;              /* Maximaal 250px breed */
+    text-align: center;            /* Tekst centreren */
+    background-color: #fff;        /* Witte achtergrond voor teamleden */
+    border-radius: 10px;           /* Afronde hoeken */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Lichte schaduw */
+    overflow: hidden;              /* Zorgt dat content binnen het blok blijft */
+    transition: transform 0.3s;    /* Animatie voor hover */
+}
+
+.teamlid img {
+    width: 100%;                   /* Afbeelding vult de breedte van het blok */
+    height: auto;                  /* Hoogte automatisch, zodat het gezicht niet wordt afgesneden */
+    max-height: 220px;             /* Max hoogte zodat alle teamfoto’s consistent zijn */
+    object-fit: cover;             /* Snijdt de afbeelding netjes bij */
+    border-radius: 10px 10px 0 0;  /* Afronden alleen bovenaan */
+}
+
+.teamlid h3 {
+    margin: 10px 0 5px 0;          /* Ruimte boven en onder naam */
+    color: #00796b;                /* Groene kleur voor naam */
+}
+
+.teamlid p {
+    margin: 0 0 10px 0;            /* Ruimte onder functie */
+    color: #555;                   /* Grijze tekstkleur */
+    font-size: 0.9rem;             /* Iets kleinere tekst */
+}
+
+/* ===================== Footer ===================== */
+footer {
+    text-align: center;            /* Centraal uitlijnen van tekst */
+    padding: 20px;                 /* Binnenruimte */
+    background-color: #00796b;     /* Zelfde groen als header */
+    color: #fff;                   /* Witte tekst */
+}
+
+/* ===================== Media queries ===================== */
+@media (max-width: 768px) {
+    /* Header mobiel */
+    header {
+        flex-direction: column;    /* Logo boven menu */
+        align-items: center;       /* Alles centreren */
+    }
+
+    nav ul {
+        flex-direction: column;    /* Menu-items onder elkaar */
+        gap: 10px;                 /* Minder ruimte tussen items */
+        text-align: center;        /* Centraal */
+    }
+
+    /* Producten mobiel */
+    .producten-container {
+        flex-direction: column;    /* Producten onder elkaar */
+        align-items: center;       /* Centraal */
+    }
+
+    .product {
+        max-width: 90%;            /* Breder op mobiel */
+    }
+
+    /* Team mobiel */
+    .team-container {
+        flex-direction: column;    /* Teamleden onder elkaar */
+        align-items: center;       /* Centraal uitlijnen */
+    }
+
+    .teamlid {
+        max-width: 90%;            /* Breder op mobiel */
+        margin-bottom: 20px;       /* Ruimte tussen teamleden */
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Geeft aan dat dit een HTML5-document is -->
+<html lang="nl"> <!-- Stelt de taal van de pagina in op Nederlands -->
+<head>
+    <meta charset="UTF-8"> <!-- Tekenset instellen voor speciale karakters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt voor mobielvriendelijke weergave -->
+    <title>Solarpark</title> <!-- Titel van de pagina in browser-tab -->
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ===================== Header ===================== -->
+<header> <!-- Start van de header -->
+    <img src="images/logo.png" alt="Solarpark logo"> <!-- Logo van het bedrijf -->
+    <nav> <!-- Start van de navigatiebalk -->
+    <ul> <!-- Ongesorteerde lijst die de menu-items bevat -->
+        <li><a href="#over-ons">Over ons</a></li> <!-- Menu-item 'Over ons', linkt naar sectie met id="over-ons" -->
+        <li><a href="#producten">Producten</a></li> 
+        <li><a href="#team">Team</a></li> 
+        <li><a href="#contact">Contact</a></li> 
+    </ul> 
+</nav> 
+</header>
+
+<!-- ===================== Hero sectie ===================== -->
+<section class="hero"> <!-- Introductie sectie -->
+    <h1>De zon als krachtbron voor morgen.</h1> <!-- Hoofdtekst -->
+    <p>Met Solarpark investeren we in de toekomst van mens én planeet.</p> <!-- Ondertekst -->
+</section>
+
+<!-- ===================== Over ons sectie ===================== -->
+<section id="over-ons" class="over-ons"> <!-- Over ons sectie -->
+    <h2>Over ons</h2> <!-- Titel -->
+    <p>Met onze technologieën investeren we in een toekomst waarin energie schoon, betrouwbaar en efficiënt is.</p> <!-- Beschrijving -->
+</section>
+
+<!-- ===================== Producten sectie ===================== -->
+<section id="producten" class="producten"> <!-- Producten container -->
+    <h2>Producten</h2> <!-- Titel sectie -->
+    <div class="producten-container"> <!-- Flex-container voor producten -->
+        <div class="product"> <!-- Enkel product -->
+            <img src="images/slimme-energiemeter.webp" alt="Slimme energiemeter"> <!-- Productafbeelding -->
+            <h3>Slimme energiemeter</h3> <!-- Productnaam -->
+            <p>De Solarpark slimme energiemeter meet niet alleen je energieverbruik, maar laat ook live zien hoeveel zonnestroom je opwekt en teruglevert. Zo krijg je grip op je energie en haal je het maximale uit je zonnepanelen.</p> <!-- Beschrijving -->
+        </div>
+        <div class="product">
+            <img src="images/thuisbatterij.webp" alt="Thuisbatterij">
+            <h3>Thuisbatterij</h3>
+            <p>De Solarpark thuisbatterij slaat overtollige zonnestroom slim op, zodat je ook in de avond of op bewolkte dagen je eigen duurzame energie gebruikt. Zo word je minder afhankelijk van het energienet en bespaar je op je energierekening.</p>
+        </div>
+        <div class="product">
+            <img src="images/zonneboiler.jpg" alt="Zonneboiler">
+            <h3>Zonneboiler</h3>
+            <p>De Solarpark zonneboiler gebruikt de kracht van de zon om water te verwarmen voor je huishouden. Zo geniet je van warm water op een milieuvriendelijke en voordelige manier, het hele jaar door.</p>
+        </div>
+        <div class="product">
+            <img src="images/zonnepanelen.jpg" alt="Zonnepanelen">
+            <h3>Zonnepanelen</h3>
+            <p>De Solarpark zonnepanelen zetten zonlicht efficiënt om in groene stroom voor jouw huis of bedrijf. Ze zijn duurzaam, onderhoudsarm en zorgen direct voor een lagere energierekening.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== Team sectie ===================== -->
+<section id="team" class="team-container"> <!-- Container voor teamleden -->
+    <h2>Team</h2> <!-- Titel -->
+    <div class="teamlid"> <!-- Teamlid Emma -->
+        <img src="images/Emma.webp" alt="Emma"> <!-- Foto Emma -->
+        <h3>Emma</h3> <!-- Naam -->
+        <p>Projectmanager</p> <!-- Functie -->
+    </div>
+    <div class="teamlid"> <!-- Teamlid Jens -->
+        <img src="images/Jens.png" alt="Jens">
+        <h3>Jens</h3>
+        <p>Installateur</p>
+    </div>
+    <div class="teamlid"> <!-- Teamlid Lara -->
+        <img src="images/Lara.png" alt="Lara">
+        <h3>Lara</h3>
+        <p>Klantenservice</p>
+    </div>
+</section>
+
+<!-- ===================== Footer ===================== -->
+<footer id="contact">
+    <p>© 2025 Solarpark - Duurzame energie voor iedereen</p> <!-- Copyright -->
+    <p>Email: info@solarpark.nl | Telefoon: 010-1234567</p> <!-- Contact info -->
+</footer>
+</body>
+</html>
